@@ -5,8 +5,6 @@ A comprehensive website showcasing the rich history, culture, and natural beauty
 🔗 **Live Demo**: [https://aseerksa.netlify.app](https://aseerksa.netlify.app)  
 📌 *Note: Currently optimized for **laptop/desktop screens only**. Mobile responsiveness will be added in future updates.*
 
-
-
 ## Introduction
 
 Welcome to **Aseer**, a dynamic and informative website dedicated to celebrating the Aseer region. From tribal history to traditional attire, local art, cuisine, and festivals — the website offers a deep dive into the region’s cultural identity.
@@ -15,9 +13,7 @@ Developed using:
 - **HTML**, **CSS**, **JavaScript**, **PHP**
 - Integrated with **MS SQL Server**
 - IDE: Visual Studio Code
-
-
-
+  
 ##  Features
 
 ###  Frontend
@@ -40,11 +36,8 @@ Developed using:
 
 ###  PHP & Database
 
-- Connection to **AsirWebsite** database via PDO
 - Secure form handling using POST & prepared statements
 - Stores user feedback (name, email, subject, message) in SQL table
-
-
 
 ##  Team Members
 
@@ -61,7 +54,7 @@ Under supervision of:
 - The site is **not yet responsive**; currently designed for **desktop/laptop screens only**.
 - Backend/database is hosted locally for demo purposes.
 
----
+
 
 ##  License
 
