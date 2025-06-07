@@ -24,6 +24,8 @@ Developed using:
 
 #### Intreface Samples 
 ![Interface](photos/Interface1.png)
+![Interface](photos/Interface2.png)
+![Interface](photos/Interface3.png)
 
 
 ###  CSS
