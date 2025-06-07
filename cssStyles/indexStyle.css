@@ -1,0 +1,648 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Playfair Display", serif;
+}
+
+:root {
+  --green: #59a244;
+  --darkBlue: #0063a6;
+  --blue: #009fdd;
+  --red: #c62729;
+  --orange: #f8ad25;
+  --black: #000000;
+  --gray: #838383;
+  --brown: #583500;
+}
+/* The navigation menu */
+.navbar {
+  /* overflow: hidden; */
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: fixed;
+  height: 70px;
+  z-index: 999;
+  width: 100%;
+  top: 0;
+  margin-bottom: 20px;
+}
+.navbarLogo {
+  width: 7%;
+}
+.navbarLogo img {
+  width: 80%;
+}
+
+.navbarContent {
+}
+
+/* Navigation links */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: var(--green);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The subnavigation menu */
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+.subnavbtn a{
+
+  margin-top: -15px;
+}
+/* Subnav button */
+.subnav .subnavbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: var(--green);
+  /* padding: 14px 16px; */
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+
+.navbar a:hover,
+.subnav:hover .subnavbtn {
+  color: var(--brown);
+}
+.subnav:hover {
+  background-color: rgb(202, 201, 201);
+}
+/* Style the subnav content - positioned absolute */
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0%;
+  background-color: rgb(228, 228, 228);
+  width: 100%;
+  z-index: 1;
+}
+
+/* Style the subnav links */
+.subnav-content a {
+  float: right;
+  color: white;
+  text-decoration: none;
+}
+
+
+.subnav-content a:hover {
+  background-color: #eee;
+  color: black;
+}
+
+
+.subnav:hover .subnav-content {
+  display: block;
+}
+
+/* ____________________ */
+/* ____________________ */
+/* Home Section Styles  */
+/* ____________________ */
+/* ____________________ */
+
+.Home {
+  height: 100vh;
+  background: url(../photos/background0.png) no-repeat;
+  background-size: cover;
+  background-position: center 50px;
+  background-attachment: fixed;
+  min-height: fit-content;
+  padding: 100px 0px;
+}
+
+.Home h1 {
+  text-align: center;
+  font-size: 80px;
+  color: var(--green);
+  margin-top: 40px;
+  z-index: 0;
+}
+.homeTexts {
+  text-align: center;
+}
+
+.homeTexts h4 {
+  margin: 15px;
+  font-size: 25px;
+  font-weight: 100;
+  color: var(--brown);
+}
+
+/* ____________________ */
+/* ____________________ */
+/* History Section Styles  */
+/* ____________________ */
+/* ____________________ */
+
+.History {
+  height: 100vh;
+  background: url(../photos/background2.jpg) no-repeat;
+
+  background-size: cover;
+  background-position: center 50px;
+  background-attachment: fixed;
+
+  padding-top: 30px;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.history_section_label {
+  width: 23%;
+  margin: 50px;
+  text-align: center;
+
+  h4 {
+    color: var(--darkBlue);
+    font-size: 40px;
+    margin-top: 50px;
+  }
+}
+
+.history_section_content {
+  padding-top: 40px;
+  width: 70%;
+  height: 80vh;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.historyCrad {
+  box-shadow: 2px 4px 12px 0px rgba(203, 202, 202, 0.594);
+  height: 16%;
+  width: 46%;
+  border-radius: 10px;
+  background-color: #f2f2f2;
+}
+
+.historyCradHead {
+  height: 20%;
+
+  img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+}
+
+.historyCradBody {
+  height: 80%;
+  display: flex;
+}
+
+.cardNumber {
+  text-align: center;
+  width: 10%;
+  padding-top: 20px;
+  font-weight: 600;
+  font-size: 25px;
+}
+
+.cardNumber.color1 {
+  color: var(--darkBlue);
+}
+
+.cardNumber.color2 {
+  color: var(--blue);
+}
+
+.cardNumber.color3 {
+  color: var(--green);
+}
+
+.cardNumber.color4 {
+  color: var(--orange);
+}
+
+.cardNumber.color5 {
+  color: var(--red);
+}
+
+.contentContainer {
+  width: 90%;
+}
+.history_section_content p {
+  text-align: center;
+  color: var(--brown);
+  font-size: 16px;
+  font-weight: 600;
+  padding-top: 5px;
+  height: 60%;
+}
+
+.history_section_readMore {
+  position: relative;
+  left: 45%;
+}
+
+.history_section_readMore a {
+  text-decoration: none;
+  display: flex;
+}
+.history_section_readMore h4 {
+  color: var(--red);
+  margin-right: 5px;
+  font-size: 20px;
+  margin-top: -10px;
+}
+
+.history_section_readMore i {
+  color: var(--red);
+
+}
+
+.history_section_readMore:hover {
+  cursor: pointer;
+
+  i,
+  h4 {
+    color: var(--orange);
+  }
+}
+
+/* ____________________ */
+/* ____________________ */
+/* Provinces Section Styles  */
+/* ____________________ */
+/* ____________________ */
+
+.Provinces {
+  height:100vh;
+  background: url(../photos/background3.png) no-repeat;
+
+  background-size: cover;
+  background-position: center 50px;
+  background-attachment: fixed;
+
+  padding-top: 30px;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.aseerMap {
+  padding-top: 60px;
+  width: fit-content;
+  margin-right: 40px;
+
+  h1 {
+    text-align: center;
+    color: var(--darkBlue);
+    margin-bottom: 30px;
+  }
+}
+
+.border {
+  box-shadow: 4px 4px 12px 0px rgba(203, 202, 202, 0.594);
+  padding: 5px;
+  border-radius: 20px;
+}
+.aseerMap iframe {
+  align-items: center;
+  border-radius: 20px;
+}
+
+.aseerMainProvinces {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 50%;
+  padding-top: 90px;
+}
+
+.provinceCard {
+  width: 200px;
+  height: 100px;
+  text-align: center;
+  box-shadow: 4px 4px 12px 0px rgba(203, 202, 202, 0.594);
+  background-color: #f1f0f0;
+  border-radius: 10px;
+  h5 {
+    color: black;
+    font-size: 22px;
+    font-weight: 300;
+  }
+}
+#capitalCity {
+  background: url(../photos/Screenshot\ 2024-11-04\ 003708.png) no-repeat;
+  border-radius: 10px;
+}
+
+#capitalCity img {
+  border-left: 4px solid #ffffff; 
+  border-right: 4px solid #ffffff; 
+}
+
+.provinceCard img {
+  border-radius: 10px;
+  width: 110px;
+  height: 110px;
+  margin-top: -50px;
+}
+
+/* ____________________ */
+/* ____________________ */
+/* Culture Section Styles  */
+/* ____________________ */
+/* ____________________ */
+
+.subCultureSecLabel{
+  text-align: center;
+  font-size: 25px;
+  color: var(--darkBlue);
+  margin-bottom: 30px;
+  padding-top: 22px;
+}
+.Culture {
+  min-height: 90vh;
+  background: url(../photos/background4.png) no-repeat;
+
+  background-size: cover;
+  background-position: center 50px;
+  background-attachment: fixed;
+
+  padding: 100px;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.Culture h4 {
+  color: var(--darkBlue);
+  font-size: 40px;
+  margin-top: 50px;
+  width: 100%;
+  height: fit-content;
+  text-align: center;
+  display: block;
+}
+
+.AseerCultureCardsContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 70%;
+  margin-left: 100px;
+  padding: 100px;
+}
+
+.CultureCard {
+  width: 250px;
+  height: 250px;
+  border-radius: 10px;
+  color: #ffffff;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  position: relative;
+}
+
+.CultureCard a {
+  text-decoration: none;
+  color: white;
+  z-index: 1;
+}
+
+.CultureCard h3 {
+  font-size: 35px;
+  margin: 0;
+  position: relative;
+  z-index: 1; 
+}
+
+#art {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.473), rgba(0, 0, 0, 0.3)),
+    url(../photos/Art.jpeg);
+}
+
+#Dances {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.473), rgba(0, 0, 0, 0.3)),
+    url(../photos/dances.jpeg);
+}
+
+#clothing {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.473), rgba(0, 0, 0, 0.3)),
+    url(../photos/clothing.jpeg);
+}
+
+/* Art Section */
+.artSec {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  background-color: #ffffff;
+  padding: 100px;
+  margin-top: 30px;
+}
+
+.artSecImages {
+  width: 45%;
+}
+
+.artSecImages img {
+  width: 40%;
+}
+
+.artSecContent {
+  width: 50%;
+  margin-top: 10px;
+}
+
+.artSecContent h3 {
+  font-size: 40px;
+  color: var(--darkBlue);
+  margin-bottom: 15px;
+}
+
+.artSecContent p {
+  font-size: 18px;
+  margin-top: 20px;
+  font-weight: 600;
+  color: var(--brown);
+  display: none; 
+}
+
+button {
+  border-radius: 10px;
+  border: none;
+  padding: 15px;
+  font-size: 15px;
+}
+
+button:hover {
+  background-color: #838383;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Clothing Section */
+
+.clothingSec {
+  height: 100vh;
+  padding: 100px;
+}
+
+.clothingCard {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  background-color: #f2f2f2;
+  box-shadow: 2px 4px 12px 0px rgba(203, 202, 202, 0.594);
+  border-radius: 20px;
+  margin-bottom: 20px;
+  margin-left: 10%;
+}
+
+.clothingCard img {
+  width: 170px;
+  height: 250px;
+}
+
+.clothingCard h3 {
+  text-align: center;
+  color: var(--darkBlue);
+}
+
+ul {
+  margin-left: 30px;
+  margin-top: 30px;
+  font-size: 18px;
+}
+
+span {
+  font-weight: 700;
+}
+
+/* DancesSec */
+
+.DancesSec {
+  height: 100vh;
+  padding: 100px;
+}
+
+
+
+.DancesSecContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  margin-left: 150px;
+}
+
+.DancesCard {
+  width: 45%;
+  background-color: #f2f2f2;
+  box-shadow: 2px 4px 12px 0px rgba(203, 202, 202, 0.594);
+  border-radius: 20px;
+  text-align: center;
+
+  h3 {
+    color: var(--darkBlue);
+    font-size: 25px;
+  }
+}
+
+.DancesCard ul {
+  text-align: start;
+}
+.DancesCard video {
+  width: 70%;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.DancesCard audio {
+  margin-top: 130px;
+  width: 90%;
+
+  background: url(../photos/1.png) no-repeat;
+  padding: 20px;
+}
+
+/* Footer */
+
+footer{
+  height: 100vh;
+  background: url(../photos/background2.jpg) no-repeat;
+
+  background-size: cover;
+  background-position: center 50px;
+  background-attachment: fixed;
+
+  padding: 100px;
+}
+
+footer h3{
+  font-size: 30px;
+  color: var(--darkBlue);
+  text-align: center;
+  margin-bottom: 40px;
+}
+form {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  width: 500px;
+  margin: auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 8px;
+ 
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 95%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  
+}
+
+input[type="submit"] {
+  background-color:var(--green);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 40%;
+}
+
+input[type="submit"]:hover {
+  background-color: var(--gray);
+}

@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Link to style file -->
+    <link rel="stylesheet" href="../cssStyles/indexStyle.css" />
+
+    <!-- Link of Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Serif+Caption:ital@0;1&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet" />
+
+    <!-- Link to font awesome library  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+
+    <title>Aseer</title>
+  </head>
+
+  <body>
+    <!-- The navigation menu -->
+    <div class="navbar">
+      <div class="navbarLogo">
+        <img src="../photos/AseerLogo.png" alt="" />
+      </div>
+
+      <div class="navbarContent">
+        <!-- Link To Home Section -->
+        <a href="#home">Home</a>
+
+        <!-- Link To Histort Section -->
+        <a href="#history">History</a>
+
+        <!-- Link To Aseer Provinces Section -->
+        <a href="#provinces">Aseer Provinces</a>
+
+        <!-- Link To  Culture Section -->
+        <div class="subnav">
+          <button class="subnavbtn">
+            <a href="#culture">Culture</a><i class="fa fa-caret-down"></i>
+          </button>
+          <div class="subnav-content">
+            <a href="#dancesSec">Dances</a>
+          
+            <a href="#clothingSec">Clothing</a>
+            <a href="#artSec">Art</a>
+          </div>
+        </div>
+        <!-- Link To contact Section -->
+        <a href="#concact">Contact</a>
+      </div>
+    </div>
+
+    <!-- Section 1 : Home Section -->
+    <section id="home" class="Home">
+      <h1>ASEER</h1>
+      <div class="homeTexts">
+        <h4>Exceptional Cultural Landmarks , Unique Natural Aseets</h4>
+      </div>
+    </section>
+
+    <!-- Section 2 : History Section  -->
+    <section id="history" class="History">
+      <div class="history_section_label"><h4>Aseer History</h4></div>
+      <div id="historyCardsContainer" class="history_section_content">
+        <!-- Cards will be inserted here by JavaScript -->
+        <!-- JS file is main.js from line 1 to line 80 -->
+      </div>
+
+      <div class="history_section_readMore">
+        <!-- Link To another wbsite -->
+        <a href="https://www.asda.gov.sa/en/asir-history/" target="_blank">
+          <h4>Discover more by visiting the Aseer Development Authority</h4>
+          <i class="fa-solid fa-link"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- Section 3, Aseer Provinces Section -->
+    <section id="provinces" class="Provinces">
+      <div class="aseerMap">
+        <h1>Aseer Region Map</h1>
+        <div class="border">
+          <!-- Frame containe aseer map  -->
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d637590.6299400675!2d44.0976233!3d19.1823623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e0170a439633013%3A0x9b1f03b6118c1c1b!2z2YXYs9iq2YrZhiDYp9mE2YrYjCDYp9mE2KrYrNiz2YjYjCDYp9mE2YrYp9i12YjZhQ!5e0!3m2!1sar!2ssa!4v1698985567819!5m2!1sar!2ssa"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+      <!-- aseerMainProvinces div acts as container to holds cards  -->
+      <div class="aseerMainProvinces">
+        <!-- 1 -->
+        <div class="provinceCard">
+          <img src="../photos/khames.jpg" alt="" />
+          <h5>Khamis Mushait</h5>
+        </div>
+
+        <!-- 2 -->
+        <div class="provinceCard">
+          <img src="../photos/Bisha.jpg" alt="" />
+          <h5>Bisha</h5>
+        </div>
+
+        <!-- 3 -->
+        <div class="provinceCard">
+          <img src="../photos/albark.jpg" alt="" />
+          <h5>Al-Birk</h5>
+        </div>
+
+        <!-- 4 -->
+        <div class="provinceCard">
+          <img src="../photos/rijalalmua.jpg" alt="" />
+          <h5>Rijal Alma</h5>
+        </div>
+        <!-- 5 -->
+        <div id="capitalCity" class="provinceCard">
+          <img src="../photos/abha.jpg" alt="" />
+          <h5>Abha</h5>
+        </div>
+        <!-- 6 -->
+        <div class="provinceCard">
+          <img src="../photos/alnimas.jpg" alt="" />
+          <h5>Al-Namas</h5>
+        </div>
+
+        <!-- 7 -->
+        <div class="provinceCard">
+          <img src="../photos/mahaul.jpeg" alt="" />
+          <h5>Muhail Asir</h5>
+        </div>
+
+        <!-- 8 -->
+
+        <div class="provinceCard">
+          <img src="../photos/ahad.jpeg" alt="" />
+          <h5>Uhud Rufaida</h5>
+        </div>
+
+        <!-- 9 -->
+        <div class="provinceCard">
+          <img src="../photos/Tathleeth.png" alt="" />
+          <h5>Tathleeth</h5>
+        </div>
+        <!-- End of content  -->
+      </div>
+    </section>
+
+    <!--  Section 4 : Culture -->
+    <section id="culture" class="Culture">
+      <h4>Aseer Culture</h4>
+
+      <!-- Start of Section 4 main part  -->
+      <div class="AseerCultureCardsContainer">
+        <!-- Card1 -->
+        <div id="art" class="CultureCard">
+          <a href="#artSec"><h3>Art</h3></a>
+        </div>
+
+        <!-- Card2 -->
+        <div id="clothing" class="CultureCard">
+          <a href="#clothingSec"><h3>Clothing</h3></a>
+        </div>
+
+        <!-- Card3 -->
+        <div id="Dances" class="CultureCard">
+          <a href="#dancesSec"><h3>Dances</h3></a>
+        </div>
+      </div>
+      <!-- end of Section 4 main part  -->
+
+      <!--  start of section 4 , Art Section -->
+      <div class="artSec" id="artSec">
+      
+        <div class="artSecImages">
+          <img src="../photos/Art1.jpeg" alt="" />
+          <img src="../photos/Art2.jpeg" alt="" />
+          <img src="../photos/Art3.jpeg" alt="" />
+          <img src="../photos/Art4.jpeg" alt="" />
+        </div>
+
+        <div class="artSecContent">
+          <h3>Al-Qatt Al-Asiri</h3>
+          <button id="readMoreBtn">Read More about Al-Qatt Al-Asiri</button>
+          <p id="artParagraph">
+            is a traditional decorative art that originated in the Asir region
+            in southern Saudi Arabia and is considered one of the most prominent
+            traditional women’s arts. This art is characterized by the use of
+            vibrant colors such as red, blue, green, and yellow, and relies on
+            geometric patterns including triangles, squares, and straight lines.
+            Women in the Asir region were responsible for decorating the walls
+            of homes, especially in the “majlis” (guest rooms), reflecting their
+            role in preserving the local heritage and culture. Al-Qatt Al-Asiri
+            is not only an aesthetic art but also carries cultural dimensions
+            that express the Asir identity and community values. In 2017, this
+            art was inscribed on UNESCO’s Intangible Cultural Heritage List,
+            highlighting its historical importance and the need to preserve it.
+            In modern times, Al-Qatt Al-Asiri has gained increased attention and
+            has been integrated into contemporary designs, from art pieces to
+            furniture, alongside efforts to pass it on to future generations
+            through art workshops and cultural events
+          </p>
+        </div>
+      </div>
+      <!--  start of section 4 , Art Section -->
+
+      <!-- start of section 4 , Clothing Section -->
+      <div class="clothingSec" id="clothingSec">
+        <h3 class="subCultureSecLabel">Attire in Aseer</h3>
+        <div class="clothingCard">
+          <img src="../photos/FemaleClothing.jpeg" alt="" />
+
+          <div class="clothingCardContent">
+            <h3>Women’s Attire in Aseer</h3>
+
+            <ul>
+              <li>
+                <span>Masraf or Daraa:</span> This is a long, loose garment worn
+                by women, often adorned with colorful embroidery featuring
+                geometric patterns that reflect local heritage
+              </li>
+              <li>
+                <span>Masraf or Daraa:</span> Women’s clothing in Asir is
+                distinguished by bright colors such as red, green, and yellow.
+                Hand embroidery is frequently used to embellish sleeves and
+                collars, adding an artistic touch to the attire
+              </li>
+              <li>
+                <span>Masraf or Daraa:</span> Women complement their outfits
+                with traditional jewelry, including necklaces, bracelets, and
+                earrings, often made from silver or gold, highlighting the
+                beauty and elegance of the attire
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Male Crad -->
+        <div class="clothingCard">
+          
+          <img src="../photos/MaleClothing.jpeg" alt="" />
+
+          <div class="clothingCardContent">
+            <h3>Men’s Attire in Aseer</h3>
+
+            <ul>
+              <li>
+                <span>Asiri Thobe:</span>
+                The thobe is characterized by its length and loose fit,
+                typically made from lightweight fabrics suitable for the
+                region’s climate. It may feature simple embroidery on the
+                sleeves or edges
+              </li>
+              <li>
+                <span>M’awz:</span> This is a wrap worn around the waist, and it
+                is a part of the traditional attire. It is distinguished by its
+                colorful designs and is often decorated
+              </li>
+              <li>
+                <span>anbiah:</span> The janbiah, or traditional dagger, is an
+                important part of men’s dress, worn around the waist,
+                symbolizing masculinity and bravery
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!--  -->
+      </div>
+      <!-- End of section 4 , Clothing -->
+
+      <!-- start of section 4 , Dances Section -->
+      <div class="DancesSec" id="dancesSec">
+        <h3 class="subCultureSecLabel" style="margin-left: 320px; margin-bottom: 50px;">Dances , Music in Aseer</h3>
+        <div class="DancesSecContainer">
+          <!-- DancesCard 1-->
+          <div class="DancesCard">
+            <h3>Aseer Dances</h3>
+            <ul>
+              <li>Aseer Step</li>
+              <li>Al-Arda</li>
+              <li>Al-Qazou’i Dance</li>
+              <li>Rayeh</li>
+            </ul>
+
+            <video src="../videos/Video.mp4" controls></video>
+          </div>
+          <!-- DancesCard 2 -->
+          <div class="DancesCard">
+            <h3>Aseer Folklore</h3>
+
+            <audio src="../audio/Audio.mp4" controls></audio>
+          </div>
+        </div>
+      </div>
+      <!-- End of section 4, Dances Section -->
+
+      <!-- End of section 4 ,Cluture Section -->
+    </section>
+<!-- section 5 : Footer = Contact -->
+
+<footer id="concact">
+  <h3>Contact us for any suggestions or opinions</h3>
+  <form action="../php/process.php" method="POST">
+    <label for="name">Name:</label>
+    <input
+      type="text"
+      id="name"
+      name="name"
+      placeholder="Enter your name"
+      required />
+
+    <label for="email">Email:</label>
+    <input
+      type="email"
+      id="email"
+      name="email"
+      placeholder="Enter your email"
+      required />
+
+    <label for="subject">Subject:</label>
+    <input
+      type="text"
+      id="subject"
+      name="subject"
+      placeholder="Enter the subject"
+      required />
+
+    <label for="message">Message:</label>
+    <textarea
+      id="message"
+      name="message"
+      rows="5"
+      placeholder="Write your message here"
+      required></textarea>
+
+    <input type="submit" value="Submit" />
+  </form>
+</footer>
+
+<!-- End of section 5  -->
+    <!-- Link to  js file -->
+    <script src="../jsScripts/main.js"></script>
+  </body>
+</html>
