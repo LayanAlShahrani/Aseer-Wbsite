@@ -44,14 +44,7 @@ Developed using:
 - Secure form handling using POST & prepared statements
 - Stores user feedback (name, email, subject, message) in SQL table
 
----
 
-##  Screenshots
-
-![Home Page](https://aseerksa.netlify.app)  
-(For full experience, visit the [Live Site](https://aseerksa.netlify.app))
-
----
 
 ##  Team Members
 
@@ -62,7 +55,6 @@ Developed using:
 Under supervision of:  
 **T. Sheikha Al-Subaie** & **Eng. Reem Alhujaili**
 
----
 
 ##  Notes
 
