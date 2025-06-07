@@ -23,7 +23,7 @@ Developed using:
 - Navigation links (including to the [Asir Region Development Authority](https://www.asir.gov.sa/))
 
 #### Intreface Samples 
-![Interface](photo/Interface1.png)
+![Interface](photos/Interface1.png)
 
 
 ###  CSS
